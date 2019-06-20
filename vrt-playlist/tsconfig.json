@@ -8,9 +8,10 @@
     "outDir": "./.ts-compiled",
     "rootDir": "./src",
     "allowSyntheticDefaultImports": true,
+    "noImplicitAny":false,
     "moduleResolution": "node"
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*", "./index.d.ts"
   ]
 }

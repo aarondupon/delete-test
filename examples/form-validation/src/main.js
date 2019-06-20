@@ -9,6 +9,7 @@ import Space from './components/Space';
 
 const Page = ({ sessions }: { sessions: Array<Session> }) => (
   <View>
+  <View>
     <Text style={typography.Heading}>Form Validation w/ DOM elements and React Primitives</Text>
     <View
       style={{
@@ -22,6 +23,22 @@ const Page = ({ sessions }: { sessions: Array<Session> }) => (
         </Space>
       ))}
     </View>
+  </View>
+  <View>
+    <Text style={typography.Heading}>Form Validation w/ DOM elements and React Primitives</Text>
+    <View
+      style={{
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+      }}
+    >
+      {sessions.map(session => (
+        <Space key={session.password} h={spacing.Large} v={spacing.Large}>
+          <Register session={session} />
+        </Space>
+      ))}
+    </View>
+  </View>
   </View>
 );
 
