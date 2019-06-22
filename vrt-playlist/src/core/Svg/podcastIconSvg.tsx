@@ -1,4 +1,3 @@
-//  @ts-ignore-file
 import React from 'react'
 import { Svg} from 'react-sketchapp'
 const {Defs, Path, G, Use } = Svg;

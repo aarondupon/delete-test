@@ -3,7 +3,7 @@ import { Svg, View } from 'react-sketchapp';
 const { Defs, Path, G, Use, Text,TSpan } = Svg;
 
 const SvgComponent = props => (
-  <Svg width={240} height={220} {...props}>
+  <Svg width={240} height={220} {...props} style={{position:'absolute',left:10,bottom:10}} >
     <G fill="none" fillRule="evenodd">
       <Path fill="#FFF" d="M.5 218.807h239v-197H.5z" />
       <Path stroke="#000" d="M.5 218.807h239v-197H.5z" />

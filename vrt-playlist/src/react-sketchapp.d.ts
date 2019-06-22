@@ -62,30 +62,3 @@ declare namespace NodeJS {
     export default classes;
   }
   
-  
-  declare module '*.glsl';
-  declare module '*.frag';
-  declare module '*.vert';
-// import React from "react";
-
-// declare module 'react-sketchapp';
-
-// declare namespace JSX {
-
-//     interface IntrinsicElements {
-//         [elemName: string]: any;
-//         // Page:ReactElement;
-//     }
-// }
-
-
-// /**
-//  * PageProps, a Page takes optionally a name and children as props
-//  */
-// export interface PageProps {
-//     name?: string;
-//     children?: React.ReactNode[] | React.ReactNode;
-// }
-// export class Page extends React.Component<PageProps, any> {}
-
-

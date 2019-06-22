@@ -1,26 +1,21 @@
 import * as React from 'react';
 import {Text, View, makeSymbol } from 'react-sketchapp';
 import styled, {css} from 'styled-components/primitives';
-import VBox from './../../../core/Layout/VBox';
-import HBox from './../../../core/Layout/HBox';
-import PodcastIconSvg from './../../../core/svg/podcastIconSvg';
-import CloseIconSvg from './../../../core/Svg/CloseIconSvg';
-import DragItemIconSvg from './../../../core/Svg/DragItemIconSvg';
-import MoreIconSvg from './../../../core/Svg/MoreIconSvg';
-import Album from './../../../core/Album';
-import { MenuButtonLeftSelected } from '../../../core/Buttons/MenuButton';
-import { useDocument } from '../../../context/DocumentContext';
-import P from '../../../core/Text/P';
-
-// const P = styled.Text`
-//     font-size:${(props)=>props.isMobile ? 11 : 14}px;
-// `
+import VBox from '../../../../core/Layout/VBox';
+import HBox from '../../../../core/Layout/HBox';
+import PodcastIconSvg from '../../../../core/svg/podcastIconSvg';
+import CloseIconSvg from '../../../../core/Svg/CloseIconSvg';
+import DragItemIconSvg from '../../../../core/Svg/DragItemIconSvg';
+import MoreIconSvg from '../../../../core/Svg/MoreIconSvg';
+import Album from '../../../../core/Album';
+import { useDocument } from '../../../../context/DocumentContext';
+import P from '../../../../core/Text/P';
+import { MenuButtonLeftSelected } from '../../../../core/Button/MenuButton';
 
 
 const StyledHBox = styled(HBox)`
-    background:${(props={hover:false})=>props.hover ? '#F2F2F2':'#ffffff'};
+    background:${(props={hover:false})=>props.hover ? '#F2F2F2' : '#ffffff'};
 `
-
 
 export default function index({hover,edit}:any) {
     const [state]:any = useDocument();

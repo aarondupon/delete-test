@@ -1,6 +1,6 @@
 import React ,{useContext,useEffect} from 'react';
 import { render as renderSketchApp, Page, Artboard, Text, View } from 'react-sketchapp';
-import { DocumentContextProvider } from './../context/DocumentContext'
+import { DocumentContextProvider } from '../../context/DocumentContext'
 
 
 export default ({ children ,...props }:any) => {

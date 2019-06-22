@@ -19,7 +19,7 @@ const RoundedBox = styled.View`
   height:100%;
   /* vertical-align:middle; */
   /* padding: 0px 10px; */
-  border-radius: 14px;
+  border-radius: ${props=>props.borderRadius || 14}px;
   ${props => props.childIndex === 'first' && css`
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
@@ -75,7 +75,7 @@ const SvgComponent = props => {
   return(
 <BoxView style={{height:60, align:"center"}}>
   <HBoxView   style={{ marginLeft:'10%',width:'80%'}}>
-    <RoundedBox  hex="#fff" childIndex="first" width={'100%'}>
+    <RoundedBox borderRadius={40} hex="#fff" childIndex="first" width={'100%'}>
       <Text style={{position:"absolute",left:10}}>{'Vul een zoekterm in'}</Text>
     </RoundedBox>
     <ButtonClose/>

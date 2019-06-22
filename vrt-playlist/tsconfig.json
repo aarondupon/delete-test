@@ -1,17 +1,29 @@
 {
   "compilerOptions": {
     "target": "es2015",
-    "module": "es2015",
-    "jsx": "react-native",
+    "module": "esnext",
+    "jsx": "preserve",
     "allowJs": true,
     "strict": true,
     "outDir": "./.ts-compiled",
     "rootDir": "./src",
     "allowSyntheticDefaultImports": true,
-    "noImplicitAny":false,
-    "moduleResolution": "node"
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "include": [
-    "./src/**/*", "./index.d.ts"
+    "./src/**/*",
+    "./index.d.ts"
   ]
 }
