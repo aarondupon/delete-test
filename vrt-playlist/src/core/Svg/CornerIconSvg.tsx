@@ -5,7 +5,6 @@ const { Defs, Path, G, Use } = Svg;
 
 const ConnerIconSvg = props => {
   const {hover} = props;
-  console.log('hov!!!!er',props)
   return(
   <View style={{ paddingTop: 10 }}>
     <Svg width={34} height={35} {...props}>

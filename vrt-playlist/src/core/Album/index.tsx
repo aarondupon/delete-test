@@ -21,9 +21,9 @@ const Album = ({width=100,hover}) => {
 //   const [state]: any = useContext(DocumentContext);
 
   return (
-    <View name="Multi" style={{ padding: 10,minWidth:width}}>
-      <Thumbnail  style={{width:width,height:width}}  />
-      <CornerIconSvg hover={hover} style={{ position: 'absolute', bottom: -2, left: -2 }} />
+    <View name="Multi" style={{ position:'relative',padding: 10,minWidth:width}}>
+      <Thumbnail hover={hover} style={{width:width,height:width}}  />
+      <CornerIconSvg hover={hover} style={{ position: 'absolute', bottom:16, left: 8 }} />
     </View>
   );
 };

@@ -3,7 +3,7 @@ import { Svg, View } from 'react-sketchapp';
 const { Defs, Path, G, Use, Text,TSpan } = Svg;
 
 const SvgComponent = props => (
-  <View style={{position:'absolute',bottom:0,width:320}}>
+  <View style={{position:'absolute',bottom:-5,width:320}}>
   <View style={{width:320, height:1, backgroundColor:"#000000"}}/>
   <Svg width={466} height={131} {...props}>
     <Defs>

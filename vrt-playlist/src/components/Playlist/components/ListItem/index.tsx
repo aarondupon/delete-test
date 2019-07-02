@@ -3,7 +3,7 @@ import {Text, View, makeSymbol } from 'react-sketchapp';
 import styled, {css} from 'styled-components/primitives';
 import VBox from '../../../../core/Layout/VBox';
 import HBox from '../../../../core/Layout/HBox';
-import PodcastIconSvg from '../../../../core/svg/podcastIconSvg';
+import PodcastIconSvg from '../../../../core/Svg/podcastIconSvg';
 import CloseIconSvg from '../../../../core/Svg/CloseIconSvg';
 import DragItemIconSvg from '../../../../core/Svg/DragItemIconSvg';
 import MoreIconSvg from '../../../../core/Svg/MoreIconSvg';
@@ -14,10 +14,10 @@ import { MenuButtonLeftSelected } from '../../../../core/Button/MenuButton';
 
 
 const StyledHBox = styled(HBox)`
-    background:${(props={hover:false})=>props.hover ? '#F2F2F2' : '#ffffff'};
+    background-color:${(props={hover:false})=> props.hover ? '#F2F2F2' : '#ffffff'};
 `
 
-export default function index({hover,edit}:any) {
+const ListItem = ({hover,edit}:any) => {
     const [state]:any = useDocument();
     const isMobile = state.width <=320;
 
@@ -27,9 +27,9 @@ export default function index({hover,edit}:any) {
                   <Album hover={hover}  width={state.width <=320 ? 50 : 100} />
                   <VBox style={{paddingLeft:5,paddingTop:5}}>
                     <P >{'do 06 jun 05:45'}</P>
-                    <HBox style={{background:'#fff'}}>
-                      <MenuButtonLeftSelected/>
-                      <P style={{marginTop:5,marginLeft:10}}>{'Podvia #17'}</P>
+                    <HBox style={{}}>
+                      <MenuButtonLeftSelected style={{margin:0}}/>
+                      <P style={{backgroundColor:'#ffffff',marginTop:5,paddingLeft:5,paddingRight:5,paddingTop:2,height:16}}>{'Podvia #17'}</P>
                     </HBox>
                     <P>{'Maakt massatoerisme de wereld onleefbaar?'}</P>
                   </VBox>
@@ -46,14 +46,14 @@ export default function index({hover,edit}:any) {
                          {!isMobile &&    <PodcastIconSvg/>}
                          
                         <View style={{width:10}}/>
-                            <P style={{width:'auto',align:'right', marginTop:2}}>{'20 min'}</P>
+                            <P style={{width:'auto'/*,align:'right'*/, marginTop:2}}>{'20 min'}</P>
                         <View style={{width:10}}/>
                         
                         <DragItemIconSvg style={{marginTop:2}}/>
                       </React.Fragment>
                       
                       :<React.Fragment>
-                          <P style={{width:'auto',align:'right', marginTop:2}}>{'20 min'}</P>
+                          <P style={{width:'auto'/*,align:'right'*/, marginTop:2}}>{'20 min'}</P>
                           <View style={{width:10}}/>
                           <PodcastIconSvg/>
                           <View style={{width:10}}/>
@@ -66,3 +66,6 @@ export default function index({hover,edit}:any) {
                 </VBox>
     )
 }
+
+
+export default ListItem

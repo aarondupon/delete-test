@@ -15,16 +15,17 @@ const NavigationBar = (props) => (
       padding: 0,
       marginTop: 10,
       marginLeft: 120,
-      width: 320,
+      width: 1320,
       height: 26,
       flexDirection: 'row',
+      display:'flex',
       ...props.style,
     }}
 
     
   >
    
-    <MenuButtonLeft selected={props.selectedIndex === 0} label={'Home'} />}
+    <MenuButtonLeft selected={props.selectedIndex === 0} label={'Home'} />
     <MenuButtonMiddle selected={props.selectedIndex === 1} label={'Playlist'} />
     <MenuButtonRight selected={props.selectedIndex === 2}  label={'Smart Radio'} />
     <MenuButtonText label={props.edit ? '< Terug' :  'Wijzigen'} />

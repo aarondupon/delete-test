@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components/primitives';
 
 const ButtonView = styled.View`
 
-  width: auto;
+  width:fit-content;
   padding: 0px 10px
   border-radius: 14px;
   ${props => props.childIndex === 'first' && css`

@@ -163,7 +163,11 @@ const HeaderNav = () => (
 const Header = (props?) => {
   const [state]:any = useContext(DocumentContext);
   return(<View name="Multi" style={{height:state.width > 386 ? 60 : 30,flexDirection:"row",width:state.width,flexShrink:0 }}>
-      <VrtNwsLogoSvg style={{marginTop:10,marginLeft:10,maxWidth:state.width/6,maxHeight:(state.width/6)/3.9534883721}}  />
+      <VrtNwsLogoSvg 
+        // viewBox={`0 0 ${state.width} ${state.height}`} 
+        // style={{width:'100%',height:'100%'}}
+        style={{marginTop:10,marginLeft:10,maxWidth:state.width/6,maxHeight:(state.width/6)/3.9534883721}}
+          />
        <View style={{
         width:state.width-180,
         position:'absolute',

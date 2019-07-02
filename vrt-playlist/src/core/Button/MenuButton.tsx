@@ -18,39 +18,39 @@ export const MenuButtonLeft = (props)=>
 <ButtonView  selected={props.selected} childIndex={'first'} >
 <Label selected={props.selected} name="label" >{props.label || 'no name'}</Label>
 </ButtonView>  
-makeSymbol(MenuButtonLeft,'MenuButtonLeft')
+// makeSymbol(MenuButtonLeft,'MenuButtonLeft')
 
 export const MenuButtonRight = (props)=>
   <ButtonView  selected={props.selected} childIndex={'last'} >
   <Label selected={props.selected} name="label" >{props.label || 'no name'}</Label>
   </ButtonView>
-  makeSymbol(MenuButtonRight,'MenuButtonRight')
+  // makeSymbol(MenuButtonRight,'MenuButtonRight')
 
 export const MenuButtonMiddleSelected = (props)=>
   <ButtonView selected childIndex={'middle'} style={props.style} >
   <Label selected name="label"  style={props.fontSize}>{props.label || 'no name'}</Label>
   </ButtonView>
-  makeSymbol(MenuButtonMiddleSelected,'MenuButtonMiddleSelected')
+  // makeSymbol(MenuButtonMiddleSelected,'MenuButtonMiddleSelected')
 
 export const MenuButtonLeftSelected = (props)=>
 <ButtonView selected childIndex={'first'} >
 <Label selected name="label" >{props.label || 'no name'}</Label>
 </ButtonView>
 
-makeSymbol(MenuButtonLeftSelected,'MenuButtonLeftSelected')
+// makeSymbol(MenuButtonLeftSelected,'MenuButtonLeftSelected')
 
 export const MenuButtonRightSelected = (props)=>
   <ButtonView  selected childIndex={'last'} >
   <Label selected name="label" >{props.label || 'no name'}</Label>
   </ButtonView>
   
-  makeSymbol(MenuButtonRightSelected,'MenuButtonRightSelected')
+  // makeSymbol(MenuButtonRightSelected,'MenuButtonRightSelected')
 
 export const MenuButtonText = (props)=>
   <ButtonView hex={'#FFFFFF'}>
-  <Text>{'Wijzigen'}</Text>
+  <Label>{'Wijzigen'}</Label>
   </ButtonView>
   
-  makeSymbol(MenuButtonText,'MenuButtonText')
+  // makeSymbol(MenuButtonText,'MenuButtonText')
 
  

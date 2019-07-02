@@ -73,7 +73,7 @@ const ButtonClose = props => (
 const SvgComponent = props => {
   // const [state] = useDocument()
   return(
-<BoxView style={{height:60, align:"center"}}>
+<BoxView style={{height:60, alignContent:"center"}}>
   <HBoxView   style={{ marginLeft:'10%',width:'80%'}}>
     <RoundedBox borderRadius={40} hex="#fff" childIndex="first" width={'100%'}>
       <Text style={{position:"absolute",left:10}}>{'Vul een zoekterm in'}</Text>

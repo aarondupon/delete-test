@@ -4,7 +4,7 @@ const HBox = styled.View`
     padding:0;
     margin:0;
     flex-direction:row;
-    vertical-align:middle;
+    /* vertical-align:middle; */
   /* align-items: center;
   justify-content: center; */
 `;
